@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 12 12" fill="none">
+  <g stroke="currentColor">
+    <path
+      strokeLinejoin="round"
+      d="M1.25 6c0-2.24 0-3.359.696-4.054C2.64 1.25 3.76 1.25 6 1.25c2.24 0 3.359 0 4.054.696.696.695.696 1.815.696 4.054 0 2.24 0 3.359-.696 4.054-.695.696-1.815.696-4.054.696-2.24 0-3.359 0-4.054-.696C1.25 9.36 1.25 8.24 1.25 6Z"
+    />
+    <path d="M8.25 6a2.25 2.25 0 1 1-4.5 0 2.25 2.25 0 0 1 4.5 0Z" />
+    <path strokeLinecap="round" strokeLinejoin="round" d="M8.755 3.25h-.006" />
+  </g>
+</svg>
