@@ -1,7 +1,7 @@
 'use client';
 
 import { AppError, ErrorCode } from '@/types/errors';
-// import { useAuthStore } from '@/store/auth-store';
+import { useAuthStore } from '@/store/auth-store';
 import {
   QueryClient,
   QueryClientProvider,
@@ -17,7 +17,7 @@ const globalErrorHandler = (error: unknown) => {
     switch (error.code) {
       case ErrorCode.UNAUTHORIZED:
         toast.error(error.message || 'توکن شما منقضی شده.');
-        // useAuthStore.getState().logout();
+        useAuthStore.getState().logout();
         break;
 
       case ErrorCode.FORBIDDEN:

@@ -1,3 +1,4 @@
+import { AuthProvider } from '@/components/providers/AuthProvider';
 import QueryProvider from '@/components/providers/QueryProvider';
 import { Toaster } from '@/components/ui/sonner';
 import { fontPrimary } from '@/config/fonts';
@@ -57,11 +58,13 @@ export default function RootLayout({
       className={fontPrimary.className}
     >
       <body
-        className="bg-background text-foreground min-h-dvh antialiased"
+        className="bg-background text-foreground h-full min-h-dvh w-full antialiased"
         suppressHydrationWarning={true}
       >
         <Toaster />
-        <QueryProvider>{children}</QueryProvider>
+        <QueryProvider>
+          <AuthProvider>{children}</AuthProvider>
+        </QueryProvider>
       </body>
     </html>
   );

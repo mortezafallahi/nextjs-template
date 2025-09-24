@@ -1,7 +1,8 @@
 import type { RequestMethod, RequestOptions } from '@/types';
-import { AppError, AppValidationError, ErrorCode } from './errors';
+import { AppError, AppValidationError, ErrorCode } from '@/types/errors';
 
 const BASE_URL = process.env.NEXT_PUBLIC_API_URL || '';
+console.log('BASE_URL:', BASE_URL);
 const IS_LARAVEL = process.env.NEXT_PUBLIC_LARAVEL_BACKEND === 'true';
 const TOKEN_NAME = process.env.NEXT_PUBLIC_TOKEN_NAME || 'token';
 

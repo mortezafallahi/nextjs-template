@@ -61,7 +61,7 @@ export function AuthProvider({ children }: { children: React.ReactNode }) {
   // Show loading while initialization or routing check
   if (isLoading || !isInitialized) {
     return (
-      <div className="bg-primary-light relative flex h-full w-full max-w-md flex-col items-center justify-center overflow-hidden p-4">
+      <div className="bg-background relative flex h-screen w-full flex-col items-center justify-center overflow-hidden p-4">
         <div className="text-center">
           <div className="border-primary mx-auto h-12 w-12 animate-spin rounded-full border-b-2" />
           <p className="mt-4 text-gray-600">در حال بارگذاری...</p>

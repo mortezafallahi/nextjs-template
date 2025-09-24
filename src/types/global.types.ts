@@ -33,3 +33,54 @@ export interface Status {
   key: string;
   value: string;
 }
+
+export interface SendOtpRequest {
+  mobile: string;
+}
+
+export interface SendOtpData {
+  expires_at: number;
+}
+
+export interface VerifyOtpRequest {
+  mobile: string;
+  code: string;
+}
+
+export interface VerifyOtpData {
+  token: string;
+  is_profile_completed: boolean;
+}
+
+export interface UserProfile {
+  id: number;
+  first_name: string;
+  last_name: string;
+  mobile: string;
+  email: string;
+  gender: string;
+  birth_date: string;
+  height: number;
+  weight: number;
+}
+
+export interface MeData {
+  user: UserProfile;
+}
+
+export interface CompleteProfileRequest {
+  first_name: string;
+  last_name: string;
+  gender: 'male' | 'female';
+  birth_date: string;
+  height: number;
+  weight: number;
+}
+
+export interface CompleteProfileData {
+  user: UserProfile;
+}
+
+export interface ProfilePageData {
+  user: UserProfile;
+}

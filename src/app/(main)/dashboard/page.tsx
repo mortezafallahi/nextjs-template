@@ -1,9 +1,12 @@
-import React from 'react'
+import React from 'react';
 
-const page = () => {
+const DashboardPage = () => {
   return (
-    <div>page</div>
-  )
-}
+    <div className="p-4">
+      <h1 className="text-2xl font-bold">داشبورد</h1>
+      <p className="mt-2">به داشبورد خود خوش آمدید.</p>
+    </div>
+  );
+};
 
-export default page
+export default DashboardPage;
